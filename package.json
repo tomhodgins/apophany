@@ -1,6 +1,6 @@
 {
   "name": "apophany",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "a pattern matcher that matches sequences of things in a filtered list",
   "main": "index.js",
   "directories": {
