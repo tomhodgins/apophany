@@ -23,11 +23,13 @@
     )
     const start = list.indexOf(trimmed[firstIndex])
     const end = list.indexOf(trimmed[firstIndex + patterns.length - 1])
-  
+
     return {
       start,
       end,
-      match: trimmed.slice(firstIndex, firstIndex + patterns.length),
+      match: start + end >= 0
+        ? trimmed.slice(firstIndex, firstIndex + patterns.length)
+        : [],
       original: list.slice(start, end + 1)
     }
   }
